@@ -1,0 +1,240 @@
+/* ------------------------------
+   전체 배경
+--------------------------------*/
+
+body{
+    background:#ffffff;
+    font-family:"Pretendard","Malgun Gothic",sans-serif;
+}
+
+.stApp{
+    background:#ffffff;
+}
+
+
+/* ------------------------------
+   가운데 영역
+--------------------------------*/
+
+.main .block-container{
+
+    max-width:760px;
+
+    margin:auto;
+
+    padding-top:25px;
+
+    padding-bottom:40px;
+
+    padding-left:25px;
+
+    padding-right:25px;
+
+}
+
+
+/* ------------------------------
+   로고
+--------------------------------*/
+
+img{
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ------------------------------
+   제목
+--------------------------------*/
+
+.title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#154c79;
+
+    margin-bottom:8px;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#666666;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ------------------------------
+   채팅
+--------------------------------*/
+
+[data-testid="stChatMessage"]{
+
+    border-radius:20px;
+
+    padding:18px;
+
+    margin-bottom:14px;
+
+}
+
+
+/* AI */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]){
+
+    background:#FFF8E7;
+
+    border:1px solid #FFE2A8;
+
+}
+
+
+/* USER */
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]){
+
+    background:#EEF6FF;
+
+    border:1px solid #D4E6FF;
+
+}
+
+
+/* ------------------------------
+   입력창
+--------------------------------*/
+
+.stChatInput{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    border:1px solid #d9d9d9;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+
+    padding:6px;
+
+}
+
+
+/* textarea */
+
+.stChatInput textarea{
+
+    font-size:16px;
+
+    color:#333;
+
+}
+
+
+/* ------------------------------
+   전송버튼
+--------------------------------*/
+
+.stChatInput button{
+
+    background:#ff9800 !important;
+
+    color:white !important;
+
+    border:none !important;
+
+    border-radius:50% !important;
+
+    width:42px;
+
+    height:42px;
+
+}
+
+
+.stChatInput button:hover{
+
+    background:#f57c00 !important;
+
+}
+
+
+/* ------------------------------
+   Spinner
+--------------------------------*/
+
+.stSpinner{
+
+    color:#2E7D32;
+
+}
+
+
+/* ------------------------------
+   스크롤바
+--------------------------------*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#cccccc;
+
+    border-radius:10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#999999;
+
+}
+
+
+/* ------------------------------
+   모바일
+--------------------------------*/
+
+@media (max-width:768px){
+
+.title{
+
+    font-size:32px;
+
+}
+
+.subtitle{
+
+    font-size:15px;
+
+}
+
+.main .block-container{
+
+    padding:15px;
+
+}
+
+}
